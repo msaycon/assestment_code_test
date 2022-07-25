@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name">Komu Assessment</string>
-    <string name="price_format">$%1$s</string>
+    <string name="app_name">Code Test</string>
+    <string name="error">Error</string>
+    <string name="lbl_ok">Ok</string>
+
+    <string name="input_format">Input: %1$s</string>
+    <string name="answer_format">Result: %1$s</string>
+    <string name="lbl_select_input">Select Input</string>
+
+    <string name="lbl_open_camera">Take Photo</string>
+    <string name="lbl_choose_photo">Choose Photo</string>
 </resources>

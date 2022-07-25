@@ -13,20 +13,4 @@ import kotlinx.coroutines.launch
 abstract class BaseViewModel : ViewModel() {
 
     var resource: MutableLiveData<Resource<Any>> = MutableLiveData()
-
-    inline fun <T> launchPagingAsync(
-        crossinline execute: suspend () -> Flow<T>,
-        crossinline onSuccess: (Flow<T>) -> Unit
-    ) {
-        viewModelScope.launch {
-            try {
-                val result = execute()
-                onSuccess(result)
-            } catch (ex: Exception) {
-                resource.value = Resource.error(
-                    ex, ex.message ?: "Error has occurred"
-                )
-            }
-        }
-    }
 }
