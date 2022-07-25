@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Komu Assessment</string>
+    <string name="price_format">$%1$s</string>
+</resources>
